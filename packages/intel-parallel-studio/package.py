@@ -110,7 +110,7 @@ class IntelParallelStudio(IntelPackage):
     version('composer.2017.1',     sha256='bc592abee829ba6e00a4f60961b486b80c15987ff1579d6560186407c84add6f', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/10978/parallel_studio_xe_2017_update1_composer_edition.tgz')
     version('composer.2017.0',     sha256='d218db66a5bb57569bea00821ac95d4647eda7422bf8a178d1586b0fb314935a', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/9656/parallel_studio_xe_2017_composer_edition.tgz')
     #
-    version('composer.2016.5',     sha256='17606c52cab6f5114223a2425923c8dd69f1858f5a3bdf280e0edea49ebd430d', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/12907/parallel_studio_xe_2016_composer_edition_update5.tgz')
+    version('composer.2016.5',     sha256='f44d2d5b90836d0e832b70dac30b18d1f6b48942058af78dc860621f4dab5037', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/12907/parallel_studio_xe_2016_composer_edition_update5.tgz')
     version('composer.2016.4',     sha256='17606c52cab6f5114223a2425923c8dd69f1858f5a3bdf280e0edea49ebd430d', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/9785/parallel_studio_xe_2016_composer_edition_update4.tgz')
     version('composer.2016.3',     sha256='fcec90ba97533e4705077e0701813b5a3bcc197b010b03e96f83191a35c26acf', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/9063/parallel_studio_xe_2016_composer_edition_update3.tgz')
     version('composer.2016.2',     sha256='6309ef8be1abba7737d3c1e17af64ca2620672b2da57afe2c3c643235f65b4c7', url='http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/8680/parallel_studio_xe_2016_composer_edition_update2.tgz')
