@@ -3,10 +3,27 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+# ----------------------------------------------------------------------------
+# If you submit this package back to Spack as a pull request,
+# please first remove this boilerplate and all FIXME comments.
+#
+# This is a template package file for Spack.  We've put "FIXME"
+# next to all the things you'll want to change. Once you've handled
+# them, you can save this file and test your package like this:
+#
+#     spack install trinityrnaseq
+#
+# You can edit this file again by typing:
+#
+#     spack edit trinityrnaseq
+#
+# See the Spack documentation for more information on packaging.
+# ----------------------------------------------------------------------------
+
 from spack import *
 
 
-class Trinity(MakefilePackage):
+class Trinityrnaseq(MakefilePackage):
     """Trinity, developed at the Broad Institute and the Hebrew University of
        Jerusalem, represents a novel method for the efficient and robust de
        novo reconstruction of transcriptomes from RNA-seq data. Trinity
@@ -24,7 +41,7 @@ class Trinity(MakefilePackage):
 
     version('2.6.6', sha256='868dfadeefaf2d3c6150a88d5e86fbc09466d69bbf4a65f70b4f5a7485668984')
 
-    depends_on("java@8", type=("build", "run"))
+    depends_on("java@8:", type=("build", "run"))
     depends_on("bowtie2")
     depends_on("jellyfish")
     depends_on("salmon")
