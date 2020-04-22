@@ -37,8 +37,20 @@ class Trinityrnaseq(MakefilePackage):
     """
 
     homepage = "http://trinityrnaseq.github.io/"
-    url      = "https://github.com/trinityrnaseq/trinityrnaseq/archive/Trinity-v2.6.6.tar.gz"
+#    url      = "https://github.com/trinityrnaseq/trinityrnaseq/archive/Trinity-v2.6.6.tar.gz"
+    git      = "https://github.com/trinityrnaseq/trinityrnaseq.git"
 
+    version('master', branch='master')
+    version('2.10.0', tag='v2.10.0')
+    version('2.9.1', tag='v2.9.1')
+    version('2.9.0',tag='v2.9.0')
+    version('2.8.6',tag='v2.8.6')
+    version('2.8.5',tag='v2.8.5')
+    version('2.8.4',tag='v2.8.4')
+    version('2.8.3',tag='v2.8.3')
+    version('2.8.2',tag='v2.8.2')
+    version('2.8.1',tag='v2.8.1')
+    version('2.8.0',tag='v2.8.0')
     version('2.6.6', sha256='868dfadeefaf2d3c6150a88d5e86fbc09466d69bbf4a65f70b4f5a7485668984')
 
     depends_on("java@8:", type=("build", "run"))
@@ -57,12 +69,12 @@ class Trinityrnaseq(MakefilePackage):
     depends_on("bowtie", type="run")
     depends_on("r", type="run")
     #depends_on("r-tidyverse", type="run")
-    depends_on("r-edger", type="run")
-    depends_on("r-deseq2", type="run")
-    depends_on("r-ape", type="run")
-    depends_on("r-gplots", type="run")
-    depends_on("r-biobase", type="run")
-    depends_on("r-qvalue", type="run")
+    #depends_on("r-edger", type="run")
+    #depends_on("r-deseq2", type="run")
+    #depends_on("r-ape", type="run")
+    #depends_on("r-gplots", type="run")
+    #depends_on("r-biobase", type="run")
+    #depends_on("r-qvalue", type="run")
     depends_on("rsem", type="run")
     depends_on("kallisto", type="run")
     depends_on("fastqc", type="run")
@@ -71,14 +83,14 @@ class Trinityrnaseq(MakefilePackage):
     depends_on("express", type="run")
     depends_on("perl-db-file", type="run")
     depends_on("perl-uri", type="run")
-    depends_on("r-fastcluster", type="run")
-    depends_on("r-ctc", type="run")
-    depends_on("r-goseq", type="run")
-    depends_on("r-glimma", type="run")
-    depends_on("r-rots", type="run")
-    depends_on("r-goplot", type="run")
-    depends_on("r-argparse", type="run")
-    depends_on("r-sm", type="run")
+    #depends_on("r-fastcluster", type="run")
+    #depends_on("r-ctc", type="run")
+    #depends_on("r-goseq", type="run")
+    #depends_on("r-glimma", type="run")
+    #depends_on("r-rots", type="run")
+    #depends_on("r-goplot", type="run")
+    #depends_on("r-argparse", type="run")
+    #depends_on("r-sm", type="run")
 
     def build(self, spec, prefix):
         make()
