@@ -23,7 +23,7 @@
 from spack import *
 
 
-class Angsd(Package):
+class AngsdLubio(Package):
     """Angsd is a program for analysing NGS data. The software can handle a
        number of different input types from mapped reads to imputed genotype
        probabilities. Most methods take genotype uncertainty into account

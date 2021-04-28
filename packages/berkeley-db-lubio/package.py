@@ -6,7 +6,7 @@
 from spack import *
 
 
-class BerkeleyDb(AutotoolsPackage):
+class BerkeleyDbLubio(AutotoolsPackage):
     """Oracle Berkeley DB"""
 
     homepage = "http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html"

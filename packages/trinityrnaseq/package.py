@@ -41,6 +41,7 @@ class Trinityrnaseq(MakefilePackage):
     git      = "https://github.com/trinityrnaseq/trinityrnaseq.git"
 
     version('master', branch='master')
+    version('2.11.0', tag='v2.11.0')
     version('2.10.0', tag='v2.10.0')
     version('2.9.1', tag='v2.9.1')
     version('2.9.0',tag='v2.9.0')
