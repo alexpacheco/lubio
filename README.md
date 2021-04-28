@@ -1,4 +1,4 @@
-# [Spack](https://github.com/LLNL/spack) package repo for HEP software packaging
+# [Spack](https://github.com/spack/spack) package repo for software packaging on Lehigh's HPC clusters
 
 This holds a set of Spack packages for Bioinformatics software such as 
 NGS Tools that are not available in spack. It relies on Spack and the 
@@ -10,7 +10,7 @@ Initial setup like:
 
 ```bash
 cd /path/to/big/disk
-git clone https://github.com/LLNL/spack.git
+git clone https://github.com/spack/spack.git
 cd spack/var/spack/repos
 git clone https://github.com/alexpacheco/lubio.git
 cd -
